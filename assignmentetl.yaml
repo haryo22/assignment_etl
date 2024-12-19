@@ -1,0 +1,21 @@
+ingestion:
+   - customers
+   - transactions
+   - payments
+   - movies
+   - moviedetails
+   - genres
+   - locations
+
+transformation:
+   - resources/sql/assignmentetl/silver_etl/customers.sql
+   - resources/sql/assignmentetl/silver_etl/transactions.sql
+   - resources/sql/assignmentetl/silver_etl/payments.sql
+   - resources/sql/assignmentetl/silver_etl/movies.sql
+   - resources/sql/assignmentetl/silver_etl/moviedetails.sql
+   - resources/sql/assignmentetl/silver_etl/genres.sql
+   - resources/sql/assignmentetl/silver_etl/locations.sql
+
+datamart:
+   - resources/sql/assignmentetl/gold_etl/dim_customers.sql
+   - resources/sql/assignmentetl/gold_etl/fact_movies.sql
